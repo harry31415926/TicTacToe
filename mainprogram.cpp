@@ -20,14 +20,14 @@ void show(char map[3][3])
 {
     for(int i=0;i<3;i++)
     {
-        cout<<" ¡Ð¡Ð¡Ð¡Ð¡Ð¡Ð¡Ð¡Ð¡Ð"<<endl;
+        cout<<" ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼"<<endl;
         for(int j=0;j<3;j++)
         {
             cout<<"|  "<<map[i][j]<<"  ";
         }
         cout<<"|"<<endl;
     }
-    cout<<" ¡Ð¡Ð¡Ð¡Ð¡Ð¡Ð¡Ð¡Ð¡Ð"<<endl;
+    cout<<" ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼"<<endl;
 }
 
 bool IsOk(int n,char map[3][3],char Player='O')
@@ -350,15 +350,15 @@ int main()
 
         if(IsWin(map))
         {
-            cout<<"¹q¸£Ä¹¤F\n";
+            cout<<"é›»è…¦è´äº†\n";
             return 0;
         }
 
-        cout<<"¡]¼Æ¦rÁä¤ñ·Ó¤E®c®æ¡^"<<endl;
+        cout<<"ï¼ˆæ•¸å­—éµæ¯”ç…§ä¹å®®æ ¼ï¼‰"<<endl;
         cin>>n;
         if(!IsOk(n,map,Player))
         {
-            cout<<"«ö¿ù¤F°Õ µð°Ú§A¬O¥ØÏm¿°¡H"<<endl;
+            cout<<"æŒ‰éŒ¯äº†å•¦ è›¤å•Šä½ æ˜¯ç›®æ´¨è†©ï¼Ÿ"<<endl;
             _sleep(1500);
             system("cls");
             continue;
@@ -370,7 +370,7 @@ int main()
 
             if(IsWin(map))
             {
-                cout<<"§AÄ¹¤F\n";
+                cout<<"ä½ è´äº†\n";
                 return 0;
             }
 
@@ -380,6 +380,6 @@ int main()
         round++;
     }
 
-    cout<<"º¡¹Ï¡A¤£¤À³Ó­t\n";
+    cout<<"æ»¿åœ–ï¼Œä¸åˆ†å‹è² \n";
     return 0;
 }
